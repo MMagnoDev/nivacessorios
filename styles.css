@@ -345,6 +345,19 @@ button {
   height: 100%;
   object-fit: cover;
   object-position: center center;
+  filter: brightness(0.35) contrast(1.1);
+}
+
+.quote-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at center,
+    rgba(14, 13, 11, 0.45) 0%,
+    rgba(14, 13, 11, 0.8) 100%
+  );
+  pointer-events: none;
 }
 
 .quote-content {
